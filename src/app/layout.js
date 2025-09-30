@@ -16,7 +16,7 @@ const sora = Sora({
   preload: true,
   fallback: ['system-ui', 'Arial', 'sans-serif'],
   adjustFontFallback: true,
-  weight: ['400', '500', '700'], // Only load needed weights
+  weight: ['400', '500', '700'],
 })
 
 const inter = Inter({
@@ -26,7 +26,7 @@ const inter = Inter({
   preload: true,
   fallback: ['system-ui', 'Arial', 'sans-serif'],
   adjustFontFallback: true,
-  weight: ['400', '500', '600', '700'], // Only load needed weights
+  weight: ['400', '500', '600', '700'],
 })
 
 const jetbrainsMono = JetBrains_Mono({
@@ -36,7 +36,7 @@ const jetbrainsMono = JetBrains_Mono({
   preload: true,
   fallback: ['monospace'],
   adjustFontFallback: true,
-  weight: ['400', '500'], // Only load needed weights
+  weight: ['400', '500'],
 })
 
 const playfairDisplay = Playfair_Display({
@@ -46,44 +46,45 @@ const playfairDisplay = Playfair_Display({
   preload: true,
   fallback: ['Georgia', 'Times New Roman', 'serif'],
   adjustFontFallback: true,
-  weight: ['400', '500', '600', '700'], // Only load needed weights
+  weight: ['400', '500', '600', '700'],
 })
 
 export const metadata = {
-  title: 'Flat 18 - Web3 & DeFi Development Agency',
-  description: 'design and development agency specializing in Web3, DeFi, BTCPayServer, crypto security, and full-stack development for blockchain entrepreneurs and startups.',
-  metadataBase: new URL('https://flat18.co.uk'),
-  keywords: 'web3 development, defi design, crypto security, btcpayserver, blockchain apps, wallet scrutiny, full-stack development, design agency, next.js development, react development, crypto website, blockchain development, web3 design, defi dashboard, bitcoin payment integration',
+  title: 'Bazement - AI Automation & Development Agency',
+  description:
+    'Bazement is an AI automation and development agency specializing in building intelligent chatbots, workflow automation, AI-powered dashboards, process optimization, and custom AI model development for startups and enterprises.',
+  metadataBase: new URL('https://bazement.xyz'),
+  keywords:
+    'AI automation, AI development, AI chatbots, AI workflow automation, AI dashboards, AI process optimization, AI-powered customer insights, AI model development, intelligent automation, business automation, automation agency, custom AI integrations',
   alternates: {
-    canonical: 'https://flat18.co.uk',
+    canonical: 'https://bazement.xyz',
   },
-  authors: [{ name: 'Flat 18', url: 'https://flat18.co.uk' }],
-  category: 'Web Development',
+  authors: [{ name: 'Bazement', url: 'https://bazement.xyz' }],
+  category: 'AI Development',
   openGraph: {
-    title: 'Flat 18 — Web3 & DeFi Design and Development Agency',
-    description: 'Specialized in Web3, DeFi, and crypto security solutions. We deliver cost-effective, high-performance applications and websites for blockchain entrepreneurs and startups with modern UI/UX and secure architecture.',
+    title: 'Bazement — AI Automation & Development Agency',
+    description:
+      'We design and deploy intelligent AI chatbots, automate workflows, build custom AI integrations, and deliver advanced AI-powered solutions that help businesses scale efficiently.',
     images: [
       {
         url: '/static/advert-flat-18-f18-og_1-p-2000.webp',
         width: 1200,
         height: 630,
-        alt: 'Flat 18 - Web3 & DeFi Development Agency',
-      }
+        alt: 'Bazement - AI Automation & Development Agency',
+      },
     ],
     locale: 'en_GB',
     type: 'website',
-    site_name: 'Flat 18',
+    site_name: 'Bazement',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flat 18 — Web3 & DeFi Design and Development Agency',
-    description: 'Specialized in Web3, DeFi, and crypto security solutions. We deliver cost-effective, high-performance applications and websites for blockchain entrepreneurs and startups with modern UI/UX and secure architecture.',
+    title: 'Bazement — AI Automation & Development Agency',
+    description:
+      'We design and deploy intelligent AI chatbots, automate workflows, build custom AI integrations, and deliver advanced AI-powered solutions that help businesses scale efficiently.',
     images: ['/static/advert-flat-18-f18-og_1-p-2000.webp'],
-    creator: '@f18_dev',
-    site: '@f18_dev',
-  },
-  verification: {
-    // Remove placeholder verification code - add a real one when available
+    creator: '@tekorakle',
+    site: '@tekorakle',
   },
   robots: {
     index: true,
@@ -100,33 +101,39 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable} ${jetbrainsMono.variable} ${playfairDisplay.variable}`}>
+    <html
+      lang="en"
+      className={`${sora.variable} ${inter.variable} ${jetbrainsMono.variable} ${playfairDisplay.variable}`}
+    >
       <head>
+        {/* Favicon */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+
         {/* JSON-LD structured data for organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Flat 18",
-              "url": "https://flat18.co.uk",
-              "logo": "https://flat18.co.uk/images/flat18_256x256.avif",
-              "sameAs": [
-                "https://x.com/f18_dev",
-                "https://github.com/vswee"
-              ],
-              "description": "design and development agency specializing in Web3, DeFi, BTCPayServer, crypto security, and full-stack development for blockchain entrepreneurs and startups.",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "United Kingdom"
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Bazement',
+              url: 'https://bazement.xyz',
+              logo: 'https://bazement.xyz/images/flat18_256x256.avif',
+              sameAs: ['https://x.com/', 'https://github.com/'],
+              description:
+                'Bazement is an AI automation and development agency specializing in AI chatbots, workflow automation, AI-powered dashboards, process optimization, and custom AI solutions for businesses worldwide.',
+              address: {
+                '@type': 'PostalAddress',
+                addressCountry: 'United Kingdom',
               },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "customer service",
-                "url": "https://flat18.co.uk/#chat"
-              }
-            })
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'customer service',
+                url: 'https://bazement.xyz/#chat',
+              },
+            }),
           }}
         />
 
@@ -135,24 +142,23 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": "https://flat18.co.uk",
-              "name": "Flat 18 - Web3 & DeFi Development Agency",
-              "description": "design and development agency specializing in Web3, DeFi, BTCPayServer, crypto security, and full-stack development for blockchain entrepreneurs and startups.",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://flat18.co.uk/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              }
-            })
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              url: 'https://bazement.xyz',
+              name: 'Bazement - AI Automation & Development Agency',
+              description:
+                'AI automation and development agency specializing in chatbots, intelligent automation, custom AI integrations, and business process optimization.',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://bazement.xyz/search?q={search_term_string}',
+                'query-input': 'required name=search_term_string',
+              },
+            }),
           }}
         />
       </head>
       <body>
-        <ClientLayout>
-          {children}
-        </ClientLayout>
+        <ClientLayout>{children}</ClientLayout>
         <ChatwootWidget />
         <ServiceWorkerRegistration />
         <AnalyticsScripts />
