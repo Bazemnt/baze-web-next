@@ -5,8 +5,8 @@ export default {
     
     // List of allowed origins
     const allowedOrigins = [
-      'https://flat18.co.uk',
-      'https://www.flat18.co.uk',
+      'https://bazement.xyz',
+      'https://www.bazement.xyz',
       'http://localhost:3000'
     ];
     
@@ -39,7 +39,7 @@ export default {
       const { name, email, projectType, message } = await request.json();
 
       const formData = new URLSearchParams();
-      formData.append('from', 'Flat18 Contact Form <web-contact-form@mg.flat18.co.uk>');
+      formData.append('from', 'Bazement Contact Form <web-contact-form@mg.flat18.co.uk>');
       formData.append('to', 'hello.flat18.co.uk@sinaswee.com');
       formData.append('subject', `New contact form submission from ${name}`);
       formData.append('text', `

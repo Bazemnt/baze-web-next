@@ -7,7 +7,7 @@ import styles from '../styles/component-css/Pricing.module.css'
 export default function Pricing() {
   const [billingPeriod, setBillingPeriod] = useState('monthly')
   const [currencies, setCurrencies] = useState([])
-  const [selectedCurrency, setSelectedCurrency] = useState('GBP')
+  const [selectedCurrency, setSelectedCurrency] = useState('USD')
   const [showCurrencyMenu, setShowCurrencyMenu] = useState(false)
   const [prices, setPrices] = useState({
     monthly: {
@@ -61,31 +61,10 @@ export default function Pricing() {
         // Calculate prices in different currencies
           const gbp = data.result.find(currency => currency.name === 'GBP')
           if (gbp) {
-            if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
-              // Auto-detect currency from browser locale
-              const browserLocale = navigator.language || navigator.userLanguage
-              let defaultCurrency = 'GBP'
-              if (browserLocale.startsWith('en-US')) {
-                defaultCurrency = 'USD'
-              } else if (browserLocale.startsWith('en-GB')) {
-                defaultCurrency = 'GBP'
-              } else if (
-                browserLocale.startsWith('de') || 
-                browserLocale.startsWith('fr') || 
-                browserLocale.startsWith('es') || 
-                browserLocale.startsWith('it') || 
-                browserLocale.startsWith('nl') || 
-                browserLocale.startsWith('pt') ||
-                browserLocale.startsWith('fi') ||
-                browserLocale.startsWith('sv') ||
-                browserLocale.startsWith('da')
-              ) {
-                defaultCurrency = 'EUR'
-              }
-              
-              if (data.result.some(currency => currency.name === defaultCurrency)) {
-                setSelectedCurrency(defaultCurrency)
-              }
+            // Always default to USD for all users
+            const defaultCurrency = 'USD'
+            if (data.result.some(currency => currency.name === defaultCurrency)) {
+              setSelectedCurrency(defaultCurrency)
             }
           
             const updatedPrices = {
@@ -293,7 +272,7 @@ export default function Pricing() {
             <span>Learn more</span>
             <i className="bi bi-arrow-right ms-2"></i>
           </Link>
-          <Link href="#chat" className="btn btn-primary">
+          <Link href="https://413na5.share-na2.hsforms.com/2ZjOEvs8fTpaJN-nqHm4duw" className="btn btn-primary">
             <span>Let's talk about pricing</span>
           </Link>
         </div>

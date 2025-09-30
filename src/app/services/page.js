@@ -10,7 +10,7 @@ import Features from '@/components/Features'
 
 export default function AiSeededDesignPage() {
   useEffect(() => {
-    document.title = 'Flat18 — AI-Seeded Design & Graphics'
+    document.title = 'Bazement — AI-Seeded Design & Graphics'
   }, [])
 
   const containerVariants = {
@@ -34,7 +34,7 @@ export default function AiSeededDesignPage() {
           </motion.div>
         </motion.div>
       </section>
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   )

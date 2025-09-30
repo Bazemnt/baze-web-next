@@ -14,8 +14,8 @@ export default function AssetPrefixScript() {
           // This script runs before any other scripts and fixes paths
           try {
             // Only run in production
-            if (window.location.hostname === 'flat18.co.uk' ||
-                window.location.hostname === 'www.flat18.co.uk') {
+            if (window.location.hostname === 'bazement.xyz' ||
+                window.location.hostname === 'www.bazement.xyz') {
 
               // Function to fix links in the document
               function fixLinks() {
@@ -24,7 +24,7 @@ export default function AssetPrefixScript() {
                   if (link.href && link.href.includes('/_next/static/css/')) {
                     const originalHref = link.getAttribute('href');
                     if (originalHref && !originalHref.startsWith('https://')) {
-                      link.href = 'https://flat18.co.uk' + originalHref;
+                      link.href = 'https://bazement.xyz' + originalHref;
                     }
                   }
                 });
@@ -34,7 +34,7 @@ export default function AssetPrefixScript() {
                   if (script.src && script.src.includes('/_next/static/chunks/')) {
                     const originalSrc = script.getAttribute('src');
                     if (originalSrc && !originalSrc.startsWith('https://')) {
-                      script.src = 'https://flat18.co.uk' + originalSrc;
+                      script.src = 'https://bazement.xyz' + originalSrc;
                     }
                   }
                 });

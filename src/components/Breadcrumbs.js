@@ -35,7 +35,7 @@ export default function Breadcrumbs() {
         "@type": "ListItem",
         "position": index + 1,
         "name": item.label,
-        "item": `https://flat18.co.uk${item.path}`
+        "item": `https://bazement.xyz${item.path}`
       }))
     }
 

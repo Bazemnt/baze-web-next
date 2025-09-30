@@ -1,11 +1,11 @@
 {
-  "name": "Flat 18 - Web Development & Design Agency",
-  "short_name": "Flat 18",
-  "description": "Full-service web development and design agency specializing in modern, high-performance websites and applications.",
+  "name": "Bazement - AI Automation & Development Agency",
+  "short_name": "Bazement",
+  "description": "AI automation and development agency helping businesses build chatbots, automate workflows, optimize processes, and scale with intelligent systems.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0c10",
-  "theme_color": "#19fdb2",
+  "theme_color": "#12f7d6",
   "icons": [
     {
       "src": "/images/favicon.png",

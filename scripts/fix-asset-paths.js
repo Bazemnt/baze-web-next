@@ -8,7 +8,7 @@ const path = require('path');
 const glob = require('glob');
 
 // Domain to use for asset paths
-const DOMAIN = 'https://flat18.co.uk';
+const DOMAIN = 'https://bazement.xyz';
 
 // Function to fix asset paths in HTML files
 async function fixAssetPaths() {

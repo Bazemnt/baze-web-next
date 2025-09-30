@@ -32,7 +32,7 @@ export default function robots() {
         ],
       },
     ],
-    sitemap: 'https://flat18.co.uk/sitemap.xml',
-    host: 'https://flat18.co.uk',
+    sitemap: 'https://bazement.xyz/sitemap.xml',
+    host: 'https://bazement.xyz',
   }
 }

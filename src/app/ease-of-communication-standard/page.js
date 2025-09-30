@@ -9,7 +9,7 @@ import styles from '@/styles/component-css/PageStyles.module.css'
 export default function EaseOfCommunicationStandardPage() {
   useEffect(() => {
     // Set page title
-    document.title = 'Flat18 — Ease of Communication Standard'
+    document.title = 'Bazement — Ease of Communication Standard'
   }, [])
 
   // Animation variants
@@ -56,14 +56,14 @@ export default function EaseOfCommunicationStandardPage() {
             className={styles.pageContent}
             variants={contentVariants}
           >
-            <h1 className={styles.pageHeading}>FLAT18 Ease of Communication Standard (F18 EoCS)</h1>
+            <h1 className={styles.pageHeading}>Bazement Ease of Communication Standard (Bazement EoCS)</h1>
             <div className={styles.badge}>Partially Updated: JUNE 2024</div>
 
             <div className={`${styles.textContent} ${styles.legalContent}`}>
-              <p>This document is aligned with the Flat18 Ease of Communication Standard (F18 EoCS) as of January 2024.</p>
+              <p>This document is aligned with the Bazement Ease of Communication Standard (Bazement EoCS) as of January 2024.</p>
 
               <h3>Introduction</h3>
-              <p>At Flat18, we believe in keeping things clear and simple. We want our documentation and communication to be easy for everyone to understand. The Flat18 Ease of Communication Standard (F18 EoCS) is our promise to use plain English and avoid complicated or confusing language.</p>
+              <p>At Bazement, we believe in keeping things clear and simple. We want our documentation and communication to be easy for everyone to understand. The Bazement Ease of Communication Standard (Bazement EoCS) is our promise to use plain English and avoid complicated or confusing language.</p>
 
               <h3>Purpose</h3>
               <p>This document provides guidelines to help us simplify our communication. Our aim is to make our information more accessible, reduce misunderstandings, and improve overall communication for both our customers and team members.</p>
@@ -121,10 +121,10 @@ export default function EaseOfCommunicationStandardPage() {
               </ul>
 
               <h3>Implementation</h3>
-              <p>All Flat18 team members should get to know the F18 EoCS and apply these guidelines in their daily communication. This includes emails, reports, project documentation, customer interactions, and website content.</p>
+              <p>All Bazement team members should get to know the Bazement EoCS and apply these guidelines in their daily communication. This includes emails, reports, project documentation, customer interactions, and website content.</p>
 
               <h3>Conclusion</h3>
-              <p>The Flat18 Ease of Communication Standard is our commitment to clear, accessible, and effective communication. By following these guidelines, we aim to make our interactions more understandable and enjoyable for everyone involved.</p>
+              <p>The Bazement Ease of Communication Standard is our commitment to clear, accessible, and effective communication. By following these guidelines, we aim to make our interactions more understandable and enjoyable for everyone involved.</p>
             </div>
           </motion.div>
         </motion.div>

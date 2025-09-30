@@ -6,8 +6,8 @@ import { initChatwoot } from '@/utils/chatwoot'
 export default function ChatwootWidget() {
   useEffect(() => {
     initChatwoot({
-      baseUrl: 'https://chatwoot.flat18.co.uk',
-      websiteToken: 'krt1otbtLdpkie19rPwPThai',
+      baseUrl: 'https://app.chatwoot.com',
+      websiteToken: 'KYv71KKfRcP48R4bRxAaQbnu',
       settings: {
         position: 'right',
         type: 'standard',

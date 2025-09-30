@@ -11,10 +11,10 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerWrapper}>
           <div className={styles.footerBrandContainer}>
-            <Link href="/" className={styles.footerBrand} aria-label="Flat 18 Home">
-              <div className={styles.footerLogo}>F18</div>
+            <Link href="/" className={styles.footerBrand} aria-label="Bazement Home">
+              {<div className={styles.footerLogo}>B.</div>}
             </Link>
-            <p className={styles.footerTagline}>Modern web development for crypto & blockchain projects</p>
+            <p className={styles.footerTagline}>Bazement, helps other businesses (especially small and growing ones) use AI-powered tools, custom software, and automation systems to save time, cut costs, and scale faster.</p>
           </div>
 
           <div className={styles.footerContent}>
@@ -22,18 +22,18 @@ export default function Footer() {
               <h3 className={styles.footerBlockTitle}>Contact</h3>
               <ul className={styles.footerLinksList}>
                 <li>
-                  <a href="#chat" className={styles.footerLink}>
-                    <span>Live Chat</span>
+                  <a href="https://413na5.share-na2.hsforms.com/2ZjOEvs8fTpaJN-nqHm4duw" className={styles.footerLink}>
+                    <span>Chat Us</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://t.me/flat18_bot" className={styles.footerLink} target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/" className={styles.footerLink} target="_blank" rel="noopener noreferrer">
                     <span>Telegram</span>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:hello@flat18.co.uk" className={styles.footerLink}>
-                    <span>Email</span>
+                  <a href="mailto:hello@bazement.xyz" className={styles.footerLink}>
+                    <span>Email Us</span>
                   </a>
                 </li>
               </ul>
@@ -43,13 +43,18 @@ export default function Footer() {
               <h3 className={styles.footerBlockTitle}>Quick Links</h3>
               <ul className={styles.footerLinksList}>
                 <li>
+                  <Link href="/services" className={styles.footerLink}>
+                    <span>Our Services</span>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/#work" className={styles.footerLink}>
                     <span>Our Work</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/#pricing" className={styles.footerLink}>
-                    <span>Pricing</span>
+                    <span>Our Pricing</span>
                   </Link>
                 </li>
                 <li>
@@ -65,7 +70,7 @@ export default function Footer() {
               <ul className={styles.footerLinksList}>
                 <li>
                   <Link href="/about" className={styles.footerLink}>
-                    <span>About</span>
+                    <span>About Us</span>
                   </Link>
                 </li>
                 <li>
@@ -89,12 +94,12 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerBottom}>
-          <div className={styles.footerCopyright}>© {new Date().getFullYear()} Flat 18. All rights reserved.</div>
+          <div className={styles.footerCopyright}>© {new Date().getFullYear()} Bazement. All rights reserved.</div>
           <div className={styles.footerSocial}>
-            <a href="https://x.com/f18_dev" className={styles.footerSocialLink} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a href="https://x.com/" className={styles.footerSocialLink} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <i className="bi bi-twitter" aria-hidden="true"></i>
             </a>
-            <a href="https://github.com/vswee" className={styles.footerSocialLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/" className={styles.footerSocialLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <i className="bi bi-github" aria-hidden="true"></i>
             </a>
           </div>

@@ -44,7 +44,7 @@ export default function Contact() {
       }, 5000)
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error sending your message. Please try again or email us directly at hello@flat18.co.uk')
+      alert('There was an error sending your message. Please try again or email us directly at hello@bazement.xyz')
     } finally {
       setIsSubmitting(false)
     }
@@ -158,8 +158,8 @@ export default function Contact() {
                   >
                     <option value="">Select project type</option>
                     <option value="website">Website</option>
-                    <option value="webapp">Web Application</option>
-                    <option value="crypto">Crypto/Web3</option>
+                    <option value="webapp">AI Automation</option>
+                    <option value="crypto">AI Development</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -203,7 +203,7 @@ export default function Contact() {
           <div className={styles.infoItem}>
             <i className={`bi bi-envelope ${styles.infoIcon}`}></i>
             <span className={styles.infoText}>
-              <a href="mailto:hello@flat18.co.uk" className={styles.infoLink}>hello@flat18.co.uk</a>
+              <a href="mailto:hello@bazement.xyz" className={styles.infoLink}>hello@bazement.xyz</a>
             </span>
           </div>
 

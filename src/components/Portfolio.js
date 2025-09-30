@@ -321,114 +321,149 @@ export default function Portfolio() {
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 })
 
   const projects = [
-    {
-      title: 'Archimedes Finance',
-      description: 'Secure Asset Tokenization Platform. Transform real-world assets into digital tokens with our secure, transparent blockchain infrastructure. Designed for institutional investors and financial professionals. ',
-      image: '/images/portfolio-graphics/archimedesfinance-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/archimedes-finance.webp',
-      link: 'https://archimedes-finance.pages.dev',
-      technologies: [
-        { name: 'Vue JS', percentage: '45%', colorClass: styles.vueColor },
-        { name: 'Node.js', percentage: '50%', colorClass: styles.nodeColor },
-        { name: 'PostgreSQL', percentage: '5%', colorClass: styles.postgresColor },
-      ],
-      status: 'Demo version',
-      category: 'app'
-    },
-        {
-      title: 'Honey Pay',
-      description: 'Instant settlement, near-zero fees. ✓Free to use payment framework ✓Non-Custodial ✓Built on Berachain',
-      image: '/images/portfolio-graphics/honeypay-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/honeypay.webp',
-      link: 'https://honeypay.pages.dev',
-      technologies: [
-        { name: 'Next.js', percentage: '100%', colorClass: styles.nextJSColor },
-      ],
-      status: 'Demo version',
-      category: 'web'
-    },
-    {
-      title: 'WalletScrutiny',
-      description: 'Collaborative project with the Bitcoin Design Community to redesign the WalletScrutiny brand and website.',
-      image: '/images/portfolio-graphics/walletscrutiny-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/wallet-scrutiny.webp',
-      link: 'https://walletscrutiny.com',
-      technologies: [
-        { name: 'JavaScript', percentage: '90%', colorClass: styles.jsColor },
-        { name: 'HTML5', percentage: '5%', colorClass: styles.htmlColor },
-        { name: 'SCSS', percentage: '5%', colorClass: styles.scssColor }
-      ],
-      status: 'Current version',
-      category: 'web'
-    },
-    {
-      title: 'BTCPay Server',
-      description: 'Clean, modern design for the BTCPay Server main landing page and Foundation website.',
-      image: '/images/portfolio-graphics/btcpayserver-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/btcpayserver.webp',
-      link: 'https://btcpayserver.org',
-      technologies: [
-        { name: 'HTML5', percentage: '40%', colorClass: styles.htmlColor },
-        { name: 'CSS', percentage: '30%', colorClass: styles.cssColor },
-        { name: 'JavaScript', percentage: '30%', colorClass: styles.jsColor }
-      ],
-      status: 'Live',
-      category: 'web'
-    },
-    {
-      title: 'F18 Pay',
-      description: 'Bitcoin, ETH and ERC-20 token payments processor built to run in serverless environments.',
-      image: '/images/portfolio-graphics/f18pay-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/f18pay.webp',
-      link: 'https://pay.flat18.co.uk',
-      technologies: [
-        { name: 'JavaScript', percentage: '100%', colorClass: styles.jsColor }
-      ],
-      status: 'Live',
-      category: 'app'
-    },
-    {
-      title: '# Hashboard',
-      description: 'Web3 application enabling transparent operation and governance of the Zettahash DAO project.',
-      image: '/images/portfolio-graphics/hashboard-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/zettahash.webp',
-      link: 'https://hashboard.zettahash.org',
-      technologies: [
-        { name: 'Vue.js', percentage: '60%', colorClass: styles.vueColor },
-        { name: 'JavaScript', percentage: '40%', colorClass: styles.jsColor }
-      ],
-      status: 'Live',
-      category: 'app'
-    },
-    {
-      title: 'Zettahash DAO',
-      description: 'Zettahash website built in Webflow and designed to be processed in Node within a GitHub Pages environment.',
-      image: '/images/portfolio-graphics/zettahash-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/zettahash-dao.webp',
-      link: 'https://zettahash-static.webflow.io',
-      technologies: [
-        { name: 'Webflow', percentage: '100%', colorClass: styles.webflowColor }
-      ],
-      status: 'Live',
-      category: 'web',
-      framework: {
-        name: 'Webflow',
-        logo: '/images/all/webflow-icon-4095338614.png'
-      }
-    },
-    {
-      title: 'dVote EVM',
-      description: "dVote's EVM Networks dashboard offers a comprehensive suite of tools designed to streamline and enhance decentralised governance for the blockchain ecosystem.",
-      image: '/images/portfolio-graphics/dvote-clay-2.webp',
-      projectLogo: '/images/portfolio-graphics/logos/dvote.webp',
-      link: 'https://evm.dvote.ai/networks',
-      technologies: [
-        { name: 'Next.js', percentage: '100%', colorClass: styles.nextJSColor },
-      ],
-      status: 'Demo',
-      category: 'web'
-    },
-  ]
+  {
+    title: 'AI Chatbot & Customer Agents',
+    description: 'Problem: Warner & Spencer, an online fashion retailer, struggled with missed leads and long response times across their website, WhatsApp, and Slack. Solution: Bazement built intelligent 24/7 AI chatbots for customer support, order tracking, and internal assistance—reducing response times from hours to seconds and increasing customer engagement by 35%.',
+    image: '/images/portfolio-graphics/chat.webp',
+    projectLogo: '/images/portfolio-graphics/logos/archimedes-finance.webp',
+    link: 'https://example.com/ai-chatbots',
+    technologies: [
+      { name: 'Next.js', percentage: '30%', colorClass: styles.nextJSColor },
+      { name: 'OpenAI', percentage: '30%', colorClass: styles.jsColor },
+      { name: 'Node.js', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'Socket.io', percentage: '10%', colorClass: styles.jsColor },
+      { name: 'Redis', percentage: '10%', colorClass: styles.postgresColor },
+    ],
+    status: 'Demo',
+    category: 'app'
+  },
+  {
+    title: 'Workflow Automation',
+    description: 'Problem: Banover Construction, a sustainable construction firm, faced excessive time spent manually sending invoices and following up on project leads. Solution: Bazement automated these workflows using Zapier, Make.com, and Google Sheets, cutting repetitive tasks from 8 hours weekly to under 15 minutes and improving project turnaround.',
+    image: '/images/portfolio-graphics/automation.webp',
+    projectLogo: '/images/portfolio-graphics/logos/btcpayserver.webp',
+    link: 'https://example.com/workflow-automation',
+    technologies: [
+      { name: 'Zapier', percentage: '25%', colorClass: styles.vueColor },
+      { name: 'n8n', percentage: '25%', colorClass: styles.nodeColor },
+      { name: 'Python', percentage: '20%', colorClass: styles.jsColor },
+      { name: 'Airtable API', percentage: '15%', colorClass: styles.htmlColor },
+      { name: 'PostgreSQL', percentage: '15%', colorClass: styles.postgresColor },
+    ],
+    status: 'Demo',
+    category: 'web'
+  },
+  {
+    title: 'AI Marketing Campaigns',
+    description: 'Problem: Darumi Kitchen, a subscription meal service, struggled with slow content creation and poor engagement. Solution: Bazement deployed AI-powered content generators and automated social/email campaigns, boosting email open rates by 20% and reducing delivery times by threefold.',
+    image: '/images/portfolio-graphics/marketing.webp',
+    projectLogo: '/images/portfolio-graphics/logos/dvote.webp',
+    link: 'https://example.com/ai-marketing',
+    technologies: [
+      { name: 'OpenAI', percentage: '40%', colorClass: styles.jsColor },
+      { name: 'Canva API', percentage: '20%', colorClass: styles.htmlColor },
+      { name: 'HubSpot API', percentage: '20%', colorClass: styles.postgresColor },
+      { name: 'Node.js', percentage: '20%', colorClass: styles.nodeColor },
+    ],
+    status: 'Demo',
+    category: 'web'
+  },
+  {
+    title: 'AI Data & Analytics Dashboards',
+    description: 'Problem: XTrading Co, a fintech startup, had to log into multiple platforms to check performance metrics. Solution: Bazement built unified dashboards pulling from Shopify, Stripe, and Google Ads, delivering AI-driven insights that saved hours of manual analysis weekly.',
+    image: '/images/portfolio-graphics/dashboard.webp',
+    projectLogo: '/images/portfolio-graphics/logos/f18pay.webp',
+    link: 'https://example.com/ai-dashboards',
+    technologies: [
+      { name: 'React', percentage: '30%', colorClass: styles.vueColor },
+      { name: 'PostgreSQL', percentage: '20%', colorClass: styles.postgresColor },
+      { name: 'TensorFlow', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'D3.js', percentage: '15%', colorClass: styles.jsColor },
+      { name: 'Chart.js', percentage: '15%', colorClass: styles.jsColor },
+    ],
+    status: 'Demo',
+    category: 'app'
+  },
+  {
+    title: 'Custom AI Integrations',
+    description: 'Problem: Liberia & Co., an e-commerce platform, wanted AI-powered recommendations but lacked integration expertise. Solution: Bazement integrated AI-driven product recommendations, product data summarization, and natural language search directly into their app.',
+    image: '/images/portfolio-graphics/recommendation.webp',
+    projectLogo: '/images/portfolio-graphics/logos/honeypay.webp',
+    link: 'https://example.com/custom-integrations',
+    technologies: [
+      { name: 'OpenAI', percentage: '25%', colorClass: styles.jsColor },
+      { name: 'Anthropic', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'Vertex AI', percentage: '20%', colorClass: styles.vueColor },
+      { name: 'Python', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'GraphQL', percentage: '15%', colorClass: styles.jsColor },
+    ],
+    status: 'Demo',
+    category: 'web'
+  },
+  {
+    title: 'Document Processing Automation',
+    description: 'Problem: Faucet Finance, a mid-sized finance company, wasted hours extracting data from invoices and contracts. Solution: Bazement deployed AI-powered document parsing, cutting processing time from 2 hours to under 10 minutes while improving accuracy.',
+    image: '/images/portfolio-graphics/document.webp',
+    projectLogo: '/images/portfolio-graphics/logos/wallet-scrutiny.webp',
+    link: 'https://example.com/document-processing',
+    technologies: [
+      { name: 'Python', percentage: '30%', colorClass: styles.nodeColor },
+      { name: 'LangChain', percentage: '30%', colorClass: styles.jsColor },
+      { name: 'OCR Tools', percentage: '20%', colorClass: styles.htmlColor },
+      { name: 'AWS Textract', percentage: '20%', colorClass: styles.postgresColor },
+    ],
+    status: 'Demo',
+    category: 'app'
+  },
+  {
+    title: 'Customer Insights Reports',
+    description: 'Problem: ThynkTech, a retail analytics company, lacked clarity on customer behavior, leading to poor decision-making. Solution: Bazement built AI-powered segmentation tools and predictive churn reports that revealed buying trends and projected lifetime value.',
+    image: '/images/portfolio-graphics/insights.webp',
+    projectLogo: '/images/portfolio-graphics/logos/zettahash-dao.webp',
+    link: 'https://example.com/customer-insights',
+    technologies: [
+      { name: 'Python', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'Pandas', percentage: '20%', colorClass: styles.jsColor },
+      { name: 'Scikit-learn', percentage: '20%', colorClass: styles.postgresColor },
+      { name: 'Power BI', percentage: '20%', colorClass: styles.vueColor },
+      { name: 'Tableau', percentage: '20%', colorClass: styles.jsColor },
+    ],
+    status: 'Demo',
+    category: 'web'
+  },
+  {
+    title: 'AI Process Optimization',
+    description: 'Problem: Graphense, a global service provider, faced delays with response times averaging 24 hours. Solution: Bazement optimized workflows with AI triaging systems, reducing response time to 2 hours and increasing satisfaction scores.',
+    image: '/images/portfolio-graphics/process.webp',
+    projectLogo: '/images/portfolio-graphics/logos/zettahash.webp',
+    link: 'https://example.com/process-optimization',
+    technologies: [
+      { name: 'Next.js', percentage: '20%', colorClass: styles.nextJSColor },
+      { name: 'Zapier', percentage: '20%', colorClass: styles.vueColor },
+      { name: 'FastAPI', percentage: '20%', colorClass: styles.nodeColor },
+      { name: 'Redis', percentage: '20%', colorClass: styles.postgresColor },
+      { name: 'Docker', percentage: '20%', colorClass: styles.jsColor },
+    ],
+    status: 'Demo',
+    category: 'app'
+  },
+  {
+    title: 'Custom AI Model Training',
+    description: 'Problem: Bailey Banking, a fintech firm, required industry-specific fraud detection models. Solution: Bazement trained a custom NLP model with client datasets, achieving 92% detection accuracy and significantly reducing financial risk.',
+    image: '/images/portfolio-graphics/detection.webp',
+    projectLogo: '/images/portfolio-graphics/logos/Webflow_logo_2023.webp',
+    link: 'https://example.com/model-training',
+    technologies: [
+      { name: 'TensorFlow', percentage: '25%', colorClass: styles.nodeColor },
+      { name: 'Python', percentage: '25%', colorClass: styles.jsColor },
+      { name: 'Kubernetes', percentage: '25%', colorClass: styles.postgresColor },
+      { name: 'Docker', percentage: '15%', colorClass: styles.jsColor },
+      { name: 'Apache Kafka', percentage: '10%', colorClass: styles.nodeColor },
+    ],
+    status: 'Demo',
+    category: 'app'
+  },
+];
 
   const filteredProjects = filter === 'all'
     ? projects
@@ -508,7 +543,7 @@ export default function Portfolio() {
           <span className={styles.sectionLabel}>Portfolio</span>
           <h2 className={styles.portfolioTitle}>Our Work</h2>
           <p className={styles.portfolioSubtitle}>
-            Explore our portfolio of successful projects across web and blockchain applications.
+            Explore our portfolio of successful projects across AI automation and development.
           </p>
 
           <div className={styles.filterContainer}>
@@ -564,7 +599,7 @@ export default function Portfolio() {
           className={styles.ctaContainer}
           variants={headingVariants}
         >
-          <a href="#chat" className={styles.ctaButton}>
+          <a href="https://413na5.share-na2.hsforms.com/2ZjOEvs8fTpaJN-nqHm4duw" className={styles.ctaButton}>
             <span>Start Your Project</span>
             <i className="bi bi-arrow-right"></i>
           </a>

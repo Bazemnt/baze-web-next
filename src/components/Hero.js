@@ -119,7 +119,7 @@ export default function Hero() {
           variants={fadeInUp}
         >
           <span className={styles.availableDot}></span>
-          Available for new projects
+        We build AI-powered automation
         </motion.div>
 
         {/* Main heading with modern gradient effect */}
@@ -128,19 +128,18 @@ export default function Hero() {
           data-text={fullText}
           variants={fadeInUp}
         >
-          <span className={`${styles.headingOrdinary} ${styles.headingDeFocus}`}>Your</span><br></br>
-          <span className={styles.headingFancy}>Design</span>
+          <span className={`${styles.headingOrdinary} ${styles.headingDeFocus}`}>AI</span><br></br>
+          <span className={styles.headingFancy}>Automation</span>
           <span className={styles.headingOrdinary}> & </span>
           <span className={styles.headingOrdinary}>Development</span><br></br>
-          <span className={`${styles.headingOrdinary} ${styles.headingDeFocus}`}> Partner</span>
+          <span className={`${styles.headingOrdinary} ${styles.headingDeFocus}`}>Agancy</span>
         </motion.h1>
 
         <motion.p
           className={styles.heroSubheading}
           variants={fadeInUp}
         >
-          We craft Web3 & DeFi solutions for entrepreneurs and start-ups in the crypto space.
-          Our full-stack approach delivers secure, high-performance applications with stunning design.
+        We specialize in creating custom AI automation solutions for businesses that want to streamline workflows, increase efficiency, and unlock new opportunities. From AI-powered chatbots to complex automation pipelines, we design, build, and integrate solutions tailored to your needs.
         </motion.p>
 
         <motion.div
@@ -148,7 +147,7 @@ export default function Hero() {
           variants={staggerContainer}
         >
           <motion.div variants={buttonVariants} whileHover="hover" whileTap="tap">
-            <Link href="#chat" className={`${styles.primaryButton} btn-icon`}>
+            <Link href="https://413na5.share-na2.hsforms.com/2ZjOEvs8fTpaJN-nqHm4duw" className={`${styles.primaryButton} btn-icon`}>
               <span className={styles.btnText}>Start Your Project</span>
               <span className={styles.btnIcon}><i className="bi bi-arrow-right"></i></span>
               <span className={styles.btnGlow}></span>
@@ -175,7 +174,7 @@ export default function Hero() {
             variants={statVariants}
             whileHover="hover"
           >
-            <div className={styles.statNumber}>12+</div>
+            <div className={styles.statNumber}>6+</div>
             <div className={styles.statLabel}>Years Experience</div>
             <div className={styles.statGlow}></div>
           </motion.div>
@@ -185,7 +184,7 @@ export default function Hero() {
             variants={statVariants}
             whileHover="hover"
           >
-            <div className={styles.statNumber}>20+</div>
+            <div className={styles.statNumber}>200+</div>
             <div className={styles.statLabel}>Projects Delivered</div>
             <div className={styles.statGlow}></div>
           </motion.div>

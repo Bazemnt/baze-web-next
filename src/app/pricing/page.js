@@ -40,7 +40,7 @@ export default function PricingPage() {
 
   useEffect(() => {
     // Set page title
-    document.title = 'Flat18 — Pricing'
+    document.title = 'Bazement — Pricing'
 
     // Initialize any necessary scripts or analytics
     if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost') {
@@ -132,7 +132,7 @@ export default function PricingPage() {
             <h1 className={styles.pageHeading}>Our Pricing</h1>
             <div className={styles.pricingIntro}>
               <p className={styles.pricingIntroText}>
-                At Flat 18, we believe in transparent, value-based pricing that aligns with your business goals.
+                At Bazement, we believe in transparent, value-based pricing that aligns with your business goals.
                 Our subscription model ensures you receive consistent, high-quality support for your digital presence.
               </p>
             </div>
@@ -140,71 +140,140 @@ export default function PricingPage() {
 
           <Pricing />
 
-          <div id="more-info" className={styles.pricingDetailsSection}>
-            <h2 className={styles.sectionHeading}>What's Included</h2>
+         <div id="more-info" className={styles.pricingDetailsSection}>
+  <h2 className={styles.sectionHeading}>What We Do</h2>
 
-            <motion.div
-              className={styles.detailsGrid}
-              variants={staggerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-code-slash"></i>
-                </div>
-                <h3 className={styles.detailTitle}>Full-Stack Development</h3>
-                <p className={styles.detailText}>Our team handles both frontend and backend development, ensuring a seamless, integrated solution for your digital needs.</p>
-              </motion.div>
+  <motion.div
+    className={styles.detailsGrid}
+    variants={staggerVariants}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.1 }}
+  >
+    {/* 1. AI Chatbots & Customer Service Agents */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-robot"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI Chatbots & Customer Service Agents</h3>
+      <p className={styles.detailText}>
+        We design and deploy intelligent AI chat agents that operate 24/7 across
+        websites, WhatsApp, Facebook Messenger, and Slack. These agents handle FAQs,
+        bookings, lead qualification, and order tracking to enhance customer experiences
+        while reducing support costs.
+      </p>
+    </motion.div>
 
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-palette"></i>
-                </div>
-                <h3 className={styles.detailTitle}>UI/UX Design</h3>
-                <p className={styles.detailText}>We create intuitive, engaging user interfaces and experiences that align with your brand and business goals.</p>
-              </motion.div>
+    {/* 2. AI Workflow Automation */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-diagram-3"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI Workflow Automation</h3>
+      <p className={styles.detailText}>
+        We streamline repetitive tasks using tools like Zapier, Make.com, and custom
+        integrations. From auto-sending invoices to generating reports, our automation
+        solutions eliminate manual errors and free your team to focus on growth.
+      </p>
+    </motion.div>
 
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-headset"></i>
-                </div>
-                <h3 className={styles.detailTitle}>Technical Support</h3>
-                <p className={styles.detailText}>Ongoing support to address any technical issues or questions that arise during and after development.</p>
-              </motion.div>
+    {/* 3. AI-Powered Marketing Automation */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-megaphone"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI-Powered Marketing Automation</h3>
+      <p className={styles.detailText}>
+        We help businesses scale marketing with AI-driven content creation, scheduling,
+        and optimization. From A/B testing to lead scoring, our solutions ensure the
+        right message reaches the right audience at the right time.
+      </p>
+    </motion.div>
 
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-kanban"></i>
-                </div>
-                <h3 className={styles.detailTitle}>Project Management</h3>
-                <p className={styles.detailText}>Dedicated project management to ensure your project stays on track, on budget, and meets all requirements.</p>
-              </motion.div>
+    {/* 4. AI Data & Analytics Dashboards */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-bar-chart-line"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI Data & Analytics Dashboards</h3>
+      <p className={styles.detailText}>
+        We build dashboards that centralize data from Google Ads, Shopify, HubSpot,
+        Stripe, and more. Get real-time analytics and predictive insights without
+        juggling multiple platforms.
+      </p>
+    </motion.div>
 
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-phone"></i>
-                </div>
-                <h3 className={styles.detailTitle}>Responsive Design</h3>
-                <p className={styles.detailText}>All our websites and applications are built to work flawlessly across all devices and screen sizes.</p>
-              </motion.div>
+    {/* 5. Custom AI Integrations */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-puzzle"></i>
+      </div>
+      <h3 className={styles.detailTitle}>Custom AI Integrations</h3>
+      <p className={styles.detailText}>
+        We integrate AI features into your apps and websites—recommendation engines,
+        document automation, property summarizers, and more—tailored to your workflows
+        and built to scale.
+      </p>
+    </motion.div>
 
-              <motion.div className={styles.detailCard} variants={itemVariants}>
-                <div className={styles.detailIcon}>
-                  <i className="bi bi-search"></i>
-                </div>
-                <h3 className={styles.detailTitle}>SEO Optimization</h3>
-                <p className={styles.detailText}>We implement best practices for search engine optimization to help your site rank higher in search results.</p>
-              </motion.div>
-            </motion.div>
-          </div>
+    {/* 6. Intelligent Document Processing */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-file-earmark-text"></i>
+      </div>
+      <h3 className={styles.detailTitle}>Intelligent Document Processing</h3>
+      <p className={styles.detailText}>
+        Automate the processing and extraction of data from invoices, contracts, and
+        forms. Our AI reduces manual entry, cuts errors, and accelerates document-heavy
+        workflows.
+      </p>
+    </motion.div>
+
+    {/* 7. AI-Powered Customer Insights */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-people"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI-Powered Customer Insights</h3>
+      <p className={styles.detailText}>
+        We analyze customer interactions, feedback, and behavior with AI. From sentiment
+        analysis to personalized recommendations, our solutions help improve retention
+        and uncover growth opportunities.
+      </p>
+    </motion.div>
+
+    {/* 8. AI-Driven Process Optimization */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-gear"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI-Driven Process Optimization</h3>
+      <p className={styles.detailText}>
+        We optimize workflows, scheduling, and supply chains using AI. Our solutions cut
+        costs, improve productivity, and keep your business running at peak performance.
+      </p>
+    </motion.div>
+
+    {/* 9. AI Training & Custom Model Development */}
+    <motion.div className={styles.detailCard} variants={itemVariants}>
+      <div className={styles.detailIcon}>
+        <i className="bi bi-cpu"></i>
+      </div>
+      <h3 className={styles.detailTitle}>AI Training & Custom Model Development</h3>
+      <p className={styles.detailText}>
+        We build and train custom AI models based on your business data. From dataset
+        preparation and fine-tuning to deployment, we deliver business-specific AI that
+        drives real results.
+      </p>
+    </motion.div>
+  </motion.div>
+</div>
 
         </motion.div>
 
-        <div className={styles.container}>
-          <Contact />
-        </div>
+        {/* <div className={styles.container}>
+  <Contact />
+</div> */}
       </section>
       <Footer />
     </main>

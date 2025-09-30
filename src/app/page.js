@@ -122,7 +122,7 @@ export default function Home() {
         <Testimonials />
         <Pricing />
         <FAQ />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
         <HomePageSchema />
       </main>

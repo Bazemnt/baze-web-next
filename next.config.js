@@ -21,7 +21,7 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // Disable trailing slashes in URLs
-  trailingSlash: false,
+  trailingSlash: true,
   // Disable the automatic static optimization
   experimental: {
     // Enable if you need to use rewrites or redirects

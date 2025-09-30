@@ -1,4 +1,4 @@
-// Enhanced Service Worker for Flat 18 Website with Performance Optimizations
+// Enhanced Service Worker for Bazement Website with Performance Optimizations
 const CACHE_NAME = 'flat18-cache-v2'; // Increment cache version
 const STATIC_CACHE_NAME = 'flat18-static-v2';
 const IMAGES_CACHE_NAME = 'flat18-images-v2';

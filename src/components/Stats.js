@@ -65,10 +65,10 @@ export default function Stats() {
   }, [])
 
   const stats = [
-    { value: 20, label: 'Projects Completed' },
+    { value: 200, label: 'Projects Completed' },
     { value: 100, label: 'Client Satisfaction', symbol:'%' },
-    { value: 12, label: 'Years Experience' },
-    { value: '2', label: 'Team Members\n(Yes, really)', noPlus: true }
+    { value: 6, label: 'Years Experience' },
+    { value: '20', label: 'Team Members\n(Yes, really)', noPlus: true }
   ]
 
   return (

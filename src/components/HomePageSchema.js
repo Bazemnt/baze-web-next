@@ -4,101 +4,123 @@ import { useEffect } from 'react'
 
 export default function HomePageSchema() {
   useEffect(() => {
-    // Only run on client side
     if (typeof window === 'undefined' || !document) return
 
-    // Add structured data for the homepage
     const homePageSchema = {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Flat 18 - Web3, AI & Full-Stack Development Agency",
-      "description": "Flat 18 is a design and development studio for startups and technology entrepreneurs. We specialise in Web3, DeFi, full-stack applications, AI-augmented workflows, and security-focused builds.",
-      "url": "https://flat18.co.uk",
+      "name": "Bazement - AI Automation & Development Agency",
+      "description": "Bazement helps businesses scale with AI automation, intelligent chatbots, workflow optimization, and custom AI model development.",
+      "url": "https://bazement.xyz",
       "isPartOf": {
         "@type": "WebSite",
-        "name": "Flat 18",
-        "url": "https://flat18.co.uk"
+        "name": "Bazement",
+        "url": "https://bazement.xyz"
       },
       "about": {
         "@type": "Organization",
-        "name": "Flat 18",
-        "url": "https://flat18.co.uk",
-        "logo": "https://flat18.co.uk/images/flat18_256x256.avif"
+        "name": "Bazement",
+        "url": "https://bazement.xyz",
+        "logo": "https://bazement.xyz/images/flat18_256x256.avif"
       },
       "mainEntity": {
         "@type": "ProfessionalService",
-        "name": "Flat 18",
-        "image": "https://flat18.co.uk/static/advert-flat-18-f18-og_1-p-2000.webp",
-        "description": "Flat 18 offers design and engineering for the modern web. From Web3 and DeFi platforms to AI-assisted development and custom interfaces, we serve founders who demand performance, polish, and dependability.",
-        "url": "https://flat18.co.uk",
+        "name": "Bazement",
+        "image": "https://bazement.xyz/static/advert-flat-18-f18-og_1-p-2000.webp",
+        "description": "Bazement provides AI automation, intelligent customer service agents, workflow automation, and advanced analytics for startups and enterprises.",
+        "url": "https://bazement.xyz",
         "telephone": "+44-0000-000000",
-        "email": "studio@flat18.co.uk",
+        "email": "hello@bazement.xyz",
         "address": {
           "@type": "PostalAddress",
-          "addressCountry": "United Kingdom"
+          "addressCountry": "Lagos, Nigeria"
         },
         "priceRange": "££",
         "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
         "sameAs": [
-          "https://x.com/f18_dev",
-          "https://github.com/vswee"
+          "https://x.com/",
+          "https://github.com/"
         ],
         "founder": {
           "@type": "Person",
-          "name": "Ed Swee"
+          "name": "Tek Orakle"
         },
-        "foundingDate": "2020-01-01",
+        "foundingDate": "2019-01-01",
         "areaServed": "Worldwide",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Web Development Services",
+          "name": "AI Automation & Development Services",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Web Development",
-                "description": "Expert web development using Next.js, React, and modern frameworks."
+                "name": "AI Chatbots & Customer Service Agents",
+                "description": "Intelligent AI-powered chatbots and virtual agents for customer support and engagement."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Web3 Development",
-                "description": "Specialised Web3 and DeFi development services."
+                "name": "Workflow Automation",
+                "description": "Automating repetitive tasks and streamlining business processes with AI."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "AI-Augmented Development",
-                "description": "Development services augmented with AI technologies."
+                "name": "AI-Powered Marketing Automation",
+                "description": "Targeted, data-driven campaigns powered by AI insights and automation."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "AI Prompt Engineering",
-                "description": "Structured prompt engineering for large language models across creative and technical domains."
+                "name": "AI Data & Analytics Dashboards",
+                "description": "Real-time dashboards that transform raw data into actionable business insights."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "AI-Seeded Design & Graphics",
-                "description": "Generative AI-powered graphics and design workflows guided by brand identity and creative direction."
+                "name": "Custom AI Integrations",
+                "description": "Integrating AI into existing platforms, CRMs, ERPs, and third-party tools."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "API Integration",
-                "description": "Seamless integration with third-party APIs and back-end services."
+                "name": "Intelligent Document Processing",
+                "description": "Automated data extraction, classification, and processing from documents using AI."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI-Powered Customer Insights",
+                "description": "Understanding customer behaviour and preferences with predictive AI analytics."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI-Driven Process Optimization",
+                "description": "Boosting efficiency by identifying bottlenecks and optimizing workflows with AI."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Training & Custom Model Development",
+                "description": "Building and training custom AI models tailored to specific business needs."
               }
             }
           ]
@@ -107,7 +129,6 @@ export default function HomePageSchema() {
     }
 
     try {
-      // Check if a schema already exists to avoid duplicates
       const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]')
       let schemaExists = false
 
@@ -121,7 +142,6 @@ export default function HomePageSchema() {
         }
       })
 
-      // Only add if no schema exists
       if (!schemaExists) {
         const script = document.createElement('script')
         script.type = 'application/ld+json'
@@ -133,7 +153,6 @@ export default function HomePageSchema() {
       console.error('Error adding schema to page:', error)
     }
 
-    // Clean up on unmount
     return () => {
       try {
         const script = document.getElementById('homepage-schema')

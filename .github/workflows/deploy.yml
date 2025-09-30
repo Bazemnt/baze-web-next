@@ -42,7 +42,7 @@ jobs:
 
           # Check if CNAME file exists
           if [ ! -f out/CNAME ]; then
-            echo "flat18.co.uk" > out/CNAME
+            echo "bazement.xyz" > out/CNAME
           fi
 
           # Check if .nojekyll file exists

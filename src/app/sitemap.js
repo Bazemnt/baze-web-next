@@ -1,15 +1,21 @@
 export default function sitemap() {
   // Base URL for the site
-  const baseUrl = 'https://flat18.co.uk';
+  const baseUrl = 'https://bazement.xyz';
 
   // Define all the routes for the sitemap
   const routes = [
     '',
-    '/services/web-development',
-    '/services/web3-defi',
-    '/services/ai-development',
-    '/services/prompt-engineering',
-    '/services/api-integration',
+    '/services/ai-chatbots-customer-service-agents',
+    '/services/workflow-automation',
+    '/services/ai-powered-marketing-automation',
+    '/services/ai-data-analytics-dashboards',
+    '/services/custom-ai-integrations',
+    '/services/intelligent-document-processing',
+    '/services/ai-powered-customer-insights',
+    '/services/ai-driven-process-optimization',
+    '/services/ai-training-custom-model-development',
+    '/services',
+    '/about',
     '/pricing',
     '/portfolio',
     '/ease-of-communication-standard',

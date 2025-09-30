@@ -1,11 +1,11 @@
-# Flat 18 Website
+# Bazement Website
 
-This is a Next.js-based rebuild of the Flat 18 website, originally created in Webflow.
+This is a Next.js-based rebuild of the Bazement website, originally created in Webflow.
 
 ## Project Structure
 
 ```
-flat18/
+Bazement/
 ├── public/              # Static assets
 │   ├── images/         # Image files
 │   ├── fonts/          # Font files
@@ -93,7 +93,7 @@ This will build the site and create the necessary files for GitHub Pages deploym
 
 ### Custom Domain
 
-The site is configured to use the custom domain `flat18.co.uk`. This is set in the `public/CNAME` file.
+The site is configured to use the custom domain `bazement.xyz`. This is set in the `public/CNAME` file.
 
 ### Other Platforms
 

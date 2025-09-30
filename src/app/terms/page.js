@@ -19,7 +19,7 @@ export default function TermsPage() {
 
   useEffect(() => {
     // Set page title
-    document.title = 'Flat18 — Terms of Service'
+    document.title = 'Bazement — Terms of Service'
   }, [])
 
   // Animation variants
@@ -66,14 +66,14 @@ export default function TermsPage() {
             className={styles.pageContent}
             variants={contentVariants}
           >
-            <h1 className={styles.pageHeading}>FLAT18 Terms of Service and How We Work Together</h1>
+            <h1 className={styles.pageHeading}>Bazement Terms of Service and How We Work Together</h1>
             <div className={styles.badge}>Updated: MAY 2025</div>
             <p className={styles.textContent}>
-              This document follows the Flat18 Ease of Communication Standard (F18 EoCS) as of January 2024. Updates to the contents are made using an LLM to enforce the standard.
+              This document follows the Bazement Ease of Communication Standard (Bazement EoCS) as of January 2024. Updates to the contents are made using an LLM to enforce the standard.
             </p>
             <div className={`${styles.textContent} ${styles.legalContent}`}>
               <p>
-                Hi there! We’re FLAT 18 MICROSYSTEMS DEVELOPMENT LLC, but you might see us called @f18micro, F18, Flat 18, or FLAT18.CO.UK in different places online. Any project under a flat18.co.uk subdomain is covered by these terms too. When we say “you,” we mean you, our awesome customer. When you see “we,” “us,” or “our,” that’s Flat 18.
+                Hi there! We’re BAZEMENT LLC, but you might see us called Bazement in different places online. Any project under a bazement.xyz subdomain is covered by these terms too. When we say “you,” we mean you, our awesome customer. When you see “we,” “us,” or “our,” that’s Bazement.
               </p>
               <p>
                 Here’s how we work together and what you can expect from us. We’ve tried to keep everything clear and straightforward.
@@ -103,9 +103,9 @@ export default function TermsPage() {
                   </div>
                   <div className={styles.textContent}>
                     {visibleVersions['contact'] ? (
-                      <>Got a project or question? Reach out on Telegram (@f18micro), our live-chat at <a href="https://flat18.co.uk/" target="_blank" rel="noopener noreferrer">https://flat18.co.uk</a>, or email <a href="mailto:hello@flat18.co.uk">hello@flat18.co.uk</a>. We'll help you see if Flat 18 is right for you and set up your project space if you join us!</>
+                      <>Got a project or question? Reach out on Telegram (@bazement), our live-chat at <a href="https://bazement.xyz/" target="_blank" rel="noopener noreferrer">https://bazement.xyz</a>, or email <a href="mailto:hello@bazement.xyz">hello@bazement.xyz</a>. We'll help you see if Bazement is right for you and set up your project space if you join us!</>
                     ) : (
-                      <>For project inquiries, contact us via Telegram (@f18micro), website live-chat (<a href="https://flat18.co.uk/" target="_blank" rel="noopener noreferrer">https://flat18.co.uk</a>), or email (<a href="mailto:hello@flat18.co.uk">hello@flat18.co.uk</a>). We will discuss your project scope, requirements, and preferences. Upon agreement, we will create an account for you and manage your project through a suitable project management tool.</>
+                      <>For project inquiries, contact us via Telegram (@bazement), website live-chat (<a href="https://bazement.xyz/" target="_blank" rel="noopener noreferrer">https://bazement.xyz</a>), or email (<a href="mailto:hello@bazement.xyz">hello@bazement.xyz</a>). We will discuss your project scope, requirements, and preferences. Upon agreement, we will create an account for you and manage your project through a suitable project management tool.</>
                     )}
                   </div>
                 </li>
@@ -403,9 +403,9 @@ export default function TermsPage() {
                   </div>
                   <div className={styles.textContent}>
                     {visibleVersions['law'] ? (
-                      <>These terms (and any proposals) are under the laws of Trinidad and Tobago. If there’s a dispute, we’ll sort it out there.</>
+                      <>These terms (and any proposals) are under the laws of Federal Republic of Nigeria. If there’s a dispute, we’ll sort it out there.</>
                     ) : (
-                      <>These terms and any related proposals are governed by the laws of Trinidad and Tobago. Disputes will be resolved under the jurisdiction of Trinidad and Tobago.</>
+                      <>These terms and any related proposals are governed by the laws of Federal Republic of Nigeria. Disputes will be resolved under the jurisdiction of Federal Republic of Nigeria.</>
                     )}
                   </div>
                 </li>

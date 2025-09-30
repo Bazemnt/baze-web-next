@@ -1,6 +1,6 @@
 # GitHub Pages Deployment Guide
 
-This guide explains how to deploy the Flat 18 website to GitHub Pages.
+This guide explains how to deploy the Bazement website to GitHub Pages.
 
 ## Prerequisites
 
@@ -20,12 +20,12 @@ Before deploying to GitHub Pages, you need to set up the following:
 
 ## Custom Domain Setup
 
-If you want to use a custom domain (e.g., `flat18.co.uk`):
+If you want to use a custom domain (e.g., `bazement.xyz`):
 
 1. Go to your GitHub repository
 2. Click on "Settings"
 3. Click on "Pages" in the left sidebar
-4. Under "Custom domain", enter your domain name (e.g., `flat18.co.uk`)
+4. Under "Custom domain", enter your domain name (e.g., `bazement.xyz`)
 5. Click "Save"
 6. Check "Enforce HTTPS" if you want to enable HTTPS
 

@@ -1,5 +1,5 @@
 {
-  "name": "flat18",
+  "name": "Bazement",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "export": "node scripts/copy-bootstrap-icons.js && npm run optimize-images && NODE_ENV=production npm run optimize-css && next build && node scripts/fix-asset-paths.js",
-    "deploy": "node scripts/copy-bootstrap-icons.js && npm run optimize-images && NODE_ENV=production NEXT_DISABLE_ESLINT=1 next build && node scripts/fix-asset-paths.js && touch out/.nojekyll && cp public/_headers out/ && echo 'flat18.co.uk' > out/CNAME",
-    "deploy:perf": "node scripts/copy-bootstrap-icons.js && npm run optimize-images && NODE_ENV=production npm run optimize-css && NEXT_DISABLE_ESLINT=1 next build && node scripts/fix-asset-paths.js && touch out/.nojekyll && cp public/_headers out/ && echo 'flat18.co.uk' > out/CNAME",
+    "deploy": "node scripts/copy-bootstrap-icons.js && npm run optimize-images && NODE_ENV=production NEXT_DISABLE_ESLINT=1 next build && node scripts/fix-asset-paths.js && touch out/.nojekyll && cp public/_headers out/ && echo 'bazement.xyz' > out/CNAME",
+    "deploy:perf": "node scripts/copy-bootstrap-icons.js && npm run optimize-images && NODE_ENV=production npm run optimize-css && NEXT_DISABLE_ESLINT=1 next build && node scripts/fix-asset-paths.js && touch out/.nojekyll && cp public/_headers out/ && echo 'bazement.xyz' > out/CNAME",
     "copy-icons": "node scripts/copy-bootstrap-icons.js",
     "purge-css": "node scripts/purge-css.js",
     "optimize-images": "node scripts/optimize-images.js",
@@ -20,11 +20,12 @@
     "fix-assets": "node scripts/fix-asset-paths.js"
   },
   "dependencies": {
+    "@next/swc-darwin-arm64": "^15.3.4",
     "bootstrap-icons": "^1.11.3",
     "form-data": "^4.0.2",
     "framer-motion": "^12.6.3",
     "mailgun.js": "^12.0.1",
-    "next": "^14.1.0",
+    "next": "^14.2.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

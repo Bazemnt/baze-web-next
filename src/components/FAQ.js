@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import styles from '../styles/component-css/FAQ.module.css'
@@ -13,10 +11,10 @@ export default function FAQ() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is Availability?",
+          "name": "Are you available for new projects?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We operate with limited active spaces per month, usually no more than 2 active clients per developer. This ensures you and your project get the attention required for success."
+            "text": "Yes! We are always open to taking on new projects. Our team works with a diverse range of clients, and we ensure every project gets full attention regardless of timeline."
           }
         },
         {
@@ -24,7 +22,7 @@ export default function FAQ() {
           "name": "How much does it cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our pricing starts at £37.50 per hour. For a typical project with around 80 development hours per month, this comes to approximately £3,000 per month. We offer discounts for longer commitments, with quarterly billing offering around 15% savings."
+            "text": "Our pricing starts at $50.00 per hour. For a typical project with about 80 development hours per month, this comes to around $4,000.00 per month. We offer discounts for long-term partnerships."
           }
         },
         {
@@ -32,15 +30,31 @@ export default function FAQ() {
           "name": "What technologies do you use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We specialize in modern web technologies including Next.js, React, Vue.js, Node.js, and various blockchain technologies. We're also experienced with headless CMS solutions and modern deployment platforms like Vercel, Netlify, and AWS."
+            "text": "We specialize in a wide range of cutting-edge technologies for AI automation and development, including modern web frameworks like Next.js, React, Vue.js, and Node.js; AI and machine learning frameworks such as TensorFlow, PyTorch, LangChain, and OpenAI API integrations; robotic process automation tools like UiPath and Automation Anywhere; workflow orchestration platforms such as n8n and Apache Airflow; and headless CMS solutions like Strapi and Contentful. Our deployment stack includes Vercel, Netlify, AWS, Google Cloud Platform, and Azure, with containerization and orchestration via Docker and Kubernetes."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does a typical project take?",
+          "name": "How long will my project take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Project timelines vary based on complexity and scope. A typical website redesign might take 4-6 weeks, while more complex applications can take 2-3 months or more. We'll provide a detailed timeline during our initial consultation."
+            "text": "Project timelines vary, but on average take 1 to 6 weeks. For example, building and deploying a custom AI chatbot can take approximately 2–4 weeks, depending on complexity, integrations, and training requirements. We provide clear timelines after scoping each project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer AI automation consulting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We help clients identify automation opportunities, design AI workflows, and integrate intelligent systems to improve efficiency and reduce costs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you ensure quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quality is ensured through thorough code reviews, automated testing, and performance audits. Our focus is always on scalable and maintainable solutions."
           }
         }
       ]
@@ -52,7 +66,6 @@ export default function FAQ() {
     script.text = JSON.stringify(faqSchema)
     document.head.appendChild(script)
 
-    // Clean up on unmount
     return () => {
       const scripts = document.querySelectorAll('script[type="application/ld+json"]')
       scripts.forEach(s => {
@@ -65,28 +78,28 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What is Availability?",
-      answer: "We operate with limited active spaces per month, usually no more than 2 active clients per developer. This ensures you and your project get the attention required for success."
+      question: "Are you available for new projects?",
+      answer: "Yes! We are always open to taking on new projects. Our team works with a diverse range of clients, and we ensure every project gets full attention regardless of timeline."
     },
     {
       question: "How much does it cost?",
-      answer: "Our pricing starts at £37.50 per hour. For a typical project with around 80 development hours per month, this comes to approximately £3,000 per month. We offer discounts for longer commitments, with quarterly billing offering around 15% savings."
+      answer: "Our pricing starts at $50.40 per hour. For a typical project with about 80 development hours per month, this comes to around $4,032.00 per month. We offer discounts for long-term partnerships."
     },
     {
-      question: "Why the subscription model?",
-      answer: "Our subscription model ensures consistent, dedicated development time for your project. It allows us to plan resources effectively and offer better rates for longer commitments."
+      question: "What technologies do you use?",
+      answer: "We specialize in a wide range of cutting-edge technologies for AI automation and development, including modern web frameworks like Next.js, React, Vue.js, and Node.js; AI and machine learning frameworks such as TensorFlow, PyTorch, LangChain, and OpenAI API integrations; robotic process automation tools like UiPath and Automation Anywhere; workflow orchestration platforms such as n8n and Apache Airflow; and headless CMS solutions like Strapi and Contentful. Our deployment stack includes Vercel, Netlify, AWS, Google Cloud Platform, and Azure, with containerization and orchestration via Docker and Kubernetes."
     },
     {
-      question: "What if I need a different timeframe?",
-      answer: "We're flexible and can accommodate different project timeframes. Contact us to discuss your specific needs and we'll find a solution that works for you."
+      question: "How long will my project take?",
+      answer: "Project timelines vary, but on average take 1 to 6 weeks. For example, building and deploying a custom AI chatbot can take approximately 2–4 weeks, depending on complexity, integrations, and training requirements. We provide clear timelines after scoping each project."
     },
     {
-      question: "How long will my project take to complete?",
-      answer: "Project timelines vary depending on complexity. A typical website takes 4-8 weeks, while larger applications may take 3-6 months. We'll provide a detailed timeline during our initial consultation."
+      question: "Do you offer AI automation consulting?",
+      answer: "Yes. We help clients identify automation opportunities, design AI workflows, and integrate intelligent systems to improve efficiency and reduce costs."
     },
     {
-      question: "Do you work with teams?",
-      answer: "Yes, we collaborate effectively with in-house teams and other contractors. Our experience in team environments helps ensure smooth integration with your existing workflow."
+      question: "How do you ensure quality?",
+      answer: "Quality is ensured through thorough code reviews, automated testing, and performance audits. Our focus is always on scalable and maintainable solutions."
     }
   ]
 
@@ -96,42 +109,22 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index)
   }
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: 'easeOut'
-      }
+      transition: { duration: 0.6, ease: 'easeOut' }
     }
   }
 
   const listVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 0.2 } }
   }
 
   const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        ease: 'easeOut'
-      }
-    }
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
   }
 
   return (
@@ -166,7 +159,7 @@ export default function FAQ() {
               <p style={{ opacity: 0.8, maxWidth: '80%', margin: '0 auto 1.5rem' }}>
                 We're here to help with any additional questions about your specific project needs.
               </p>
-              <a href="#chat" style={{
+              <a href="https://413na5.share-na2.hsforms.com/2ZjOEvs8fTpaJN-nqHm4duw" style={{
                 display: 'inline-block',
                 padding: '0.75rem 1.5rem',
                 background: 'linear-gradient(to right, var(--accent-orange), var(--accent-yellow))',
@@ -192,31 +185,30 @@ export default function FAQ() {
           </motion.div>
 
           <div>
-
-          <motion.div
-            className={styles.faqList}
-            variants={listVariants}
-          >
-          {faqs.map((faq, index) => (
             <motion.div
-              key={index}
-              className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}
-              onClick={() => toggleFAQ(index)}
-              variants={itemVariants}
+              className={styles.faqList}
+              variants={listVariants}
             >
-              <div className={styles.faqQuestion}>
-                <h3 className={styles.questionText}>{faq.question}</h3>
-                <div className={styles.faqIcon}>
-                  <i className={`bi ${openIndex === index ? 'bi-dash' : 'bi-plus'}`}></i>
-                </div>
-              </div>
-              <div className={styles.faqAnswer}>
-                <p className={styles.answerText}>{faq.answer}</p>
-              </div>
+              {faqs.map((faq, index) => (
+                <motion.div
+                  key={index}
+                  className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}
+                  onClick={() => toggleFAQ(index)}
+                  variants={itemVariants}
+                >
+                  <div className={styles.faqQuestion}>
+                    <h3 className={styles.questionText}>{faq.question}</h3>
+                    <div className={styles.faqIcon}>
+                      <i className={`bi ${openIndex === index ? 'bi-dash' : 'bi-plus'}`}></i>
+                    </div>
+                  </div>
+                  <div className={styles.faqAnswer}>
+                    <p className={styles.answerText}>{faq.answer}</p>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
-        </div>
+          </div>
         </div>
       </motion.div>
     </section>
