@@ -20,7 +20,6 @@
     "fix-assets": "node scripts/fix-asset-paths.js"
   },
   "dependencies": {
-    "@next/swc-darwin-arm64": "^15.3.4",
     "bootstrap-icons": "^1.11.3",
     "form-data": "^4.0.2",
     "framer-motion": "^12.6.3",
