@@ -20,6 +20,7 @@
     "fix-assets": "node scripts/fix-asset-paths.js"
   },
   "dependencies": {
+    "@img/sharp-linux-x64": "^0.34.1",
     "bootstrap-icons": "^1.11.3",
     "form-data": "^4.0.2",
     "framer-motion": "^12.6.3",
